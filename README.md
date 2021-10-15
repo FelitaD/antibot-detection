@@ -12,6 +12,7 @@ The target website has several anti-bot detection techniques for which the crawl
 | IP-rate limiting        | Rotating proxies                  | [Zyte Smart Proxy Manager](https://scrapy-zyte-smartproxy.readthedocs.io/en/latest/) |
 | Banning Data center IPs | Residential IPs                   | [Zyte Smart Proxy Manager](https://scrapy-zyte-smartproxy.readthedocs.io/en/latest/) |
 | Requests rate           | Slow crawling speed               | [Scrapy Auto-throttling](https://docs.scrapy.org/en/latest/topics/autothrottle.html)   |
+| Headers                 | Rotate User-Agents                | [Scrapy-fake-useragent](https://github.com/alecxe/scrapy-fake-useragent)                      |
 | TLS Fingerprinting      | Forge and rotate TLS fingerprints |                          |
 ## Run the spider
 

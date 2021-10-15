@@ -8,7 +8,7 @@ class CulturaSpider(scrapy.Spider):
     name = 'cultura'
     allowed_domains = ['www.cultura.com']
     # start_urls = ['http://www.cultura.com/musique/genres-musicaux.html/']
-    music = 'http://www.cultura.com/musique/genres-musicaux.html/'
+    music = 'http://www.cultura.com/musique/genres-musicaux.html'
     zyte_smartproxy_enabled = True
     zyte_smartproxy_apikey = 'cf2ba4fea79d4babbb9eb625d0dcfb82'
 
@@ -36,7 +36,7 @@ class CulturaSpider(scrapy.Spider):
                               'image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                     'accept_encoding': 'gzip, deflate, br',
                     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-                    'referer': 'https://www.cultura.com/musique/genres-musicaux.html?p=1',
+                    'referer': 'https://www.google.com/',
                     'sec-ch-ua': '"Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"',
                     'sec-ch-ua-mobile': '?0',
                     'sec-ch-ua-platform': 'macOS',
