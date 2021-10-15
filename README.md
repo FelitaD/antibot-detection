@@ -2,14 +2,14 @@
 
 ## Content
 ### Architecture
-It is a [Scrapy crawler](https://docs.scrapy.org/en/latest/index.html) using [Splash](https://github.com/scrapy-plugins/scrapy-splash) to render javascript.
+It is a [Scrapy crawler](https://docs.scrapy.org/en/latest/index.html).
 ### Description
 The target website has several anti-bot detection techniques for which the crawler will implement a solution:
 
 | Antibot technique       | Solution                          | Technology implemented   |
 |-------------------------|-----------------------------------|--------------------------|
-| Browser Fingerprinting  | Headless Browser                  | Splash                   |
-| IP-rate limiting        | Rotating proxies                  | Zyte Smart Proxy Manager |
+| Browser Fingerprinting  | Headless Browser                  | [Splash](https://github.com/scrapy-plugins/scrapy-splash)                   |
+| IP-rate limiting        | Rotating proxies                  | [Zyte Smart Proxy Manager](https://scrapy-zyte-smartproxy.readthedocs.io/en/latest/) |
 | Banning Data center IPs | Residential IPs                   |                          |
 | TLS Fingerprinting      | Forge and rotate TLS fingerprints |                          |
 
@@ -33,7 +33,6 @@ The target website has several anti-bot detection techniques for which the crawl
 
 ### 1. Headless browsing and JS rendering with Splash
 
-    pip3 install scrapy-splash
-    docker run -p 8050:8050 scrapinghub/splash
+Run Splash server in docker container.
 
 ### 2. 
