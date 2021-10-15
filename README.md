@@ -13,9 +13,9 @@ The target website has several anti-bot detection techniques for which the crawl
 | Banning Data center IPs | Residential IPs                   | [Zyte Smart Proxy Manager](https://scrapy-zyte-smartproxy.readthedocs.io/en/latest/) |
 | Requests rate           | Slow crawling speed               | [Scrapy Auto-throttling](https://docs.scrapy.org/en/latest/topics/autothrottle.html)   |
 | TLS Fingerprinting      | Forge and rotate TLS fingerprints |                          |
-## Implementation
+## Run the spider
 
-### 0. Prerequesites
+### Prerequesites
 
 - Install python 3
 - Install Docker to run Splash server
@@ -32,8 +32,14 @@ The target website has several anti-bot detection techniques for which the crawl
 
 `pip3 install -r requirements.txt`
 
-### 1. Headless browsing and JS rendering with Splash
+- Run Splash server in docker container.
 
-Run Splash server in docker container.
+### Start crawler
 
-### 2. 
+Go to directory containing the `.cfg` file
+
+`cd clean`
+
+Run the spider
+
+`scrapy crawl cultura`
